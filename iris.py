@@ -10,7 +10,7 @@ st.title('Iris Species Prediction App 🌺')
 st.write("This app predicts the species of an Iris flower based on its measurements.")
 
 # Add the image of the iris flower directly from its URL
-st.image("E:\python\iris_image.png", caption='A beautiful Iris flower', use_container_width=True)
+st.image("iris_image.png", caption='A beautiful Iris flower', use_container_width=True)
 
 # Check if the model file exists before trying to load it
 if not os.path.exists('iris_model.pkl'):
@@ -57,4 +57,5 @@ st.write(f"Petal Length: {input_features[0][2]:.2f} cm")
 st.write(f"Petal Width: {input_features[0][3]:.2f} cm")
 
 st.markdown("---")
+
 st.caption("Built with Streamlit and scikit-learn")
